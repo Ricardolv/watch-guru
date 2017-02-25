@@ -4,6 +4,10 @@ body {
 	background-image: url('https://unsplash.it/g/1500/800?random');
 }
 
+/*-----------------------*\
+  Login
+\*-----------------------*/
+
 .login-form {
 	margin-top: 50vh;
 	padding: 20px 30px;
