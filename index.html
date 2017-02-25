@@ -166,9 +166,103 @@
       </table>
     </div>
 
+    <footer class="row">
+        <dir class="col-sm-6">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#novaOS">Nova Ordem de serviço</button>
+        </dir>
+
+        <dir class="col-sm-6 paginacao text-right">
+            <ul class="pagination">
+              <li class="disabled"><a href=""><span><<</span></a></li>
+              <li class="active"><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">5</a></li>
+              <li><a href=""><span>>></span></a></li>
+            </ul>
+        </dir>
+    </footer>
+
   </div>
 
+  <div id="novaOS" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h4 class="modal-title">Nova Ordem de serviço</h4>
+         </div>  
+         <form>
+           <div class="modal-body">
+             
+              <div class="row">
+                
+                <div class="form-group col-xs-12">
+                  <label>Código da OS</label>
+                  <p class="form-control-static">987665</p>
+                </div>
+              
+              </div>
 
+              <div class="row">
+                
+                <div class="form-group col-sm-5">
+                  <label for="cliente">Cliente</label>
+                  <select id="cliente" class="form-control">
+                    <option value="">Selecione...</option>
+                    <option value="1">Bernardo</option>
+                    <option value="2">Liliane</option>
+                    <option value="3">Ricardo</option>
+                  </select>
+                </div>
+                
+                <div class="form-group col-sm-7">
+                  <label for="servico">Serviços</label>
+                  <select id="servico" class="form-control">
+                    <option value="">Selecione...</option>
+                    <option value="1">Ajuste de data e hora</option>
+                    <option value="2">Concerto de enbgrenagem</option>
+                    <option value="3">Troca de bateria</option>
+                  </select>
+                </div>
+
+              </div>
+              
+              <div class="row">
+
+                <div class="form-group col-xs-12">
+                  <label for="observacao">Observação</label>
+                  <textarea id="observacao" class="form-control" rows="3"></textarea>
+                </div>  
+
+              </div>
+              
+              <div class="row">
+
+                <div class="form-group col-sm-4">
+                  <label  for="valor">Valor</label>
+                  <div class="input-group">
+                      <div class="input-group-addon">R$</div>
+                      <input type="text" name="" id="valor" class="form-control" />
+                  </div>
+                </div>
+                
+              </div>
+
+             
+           </div>
+           <div class="modal-footer">
+             <button type="reset" class="btn btn-danger">Limpar</button>
+             <button type="submit" class="btn btn-primary">Salvar</button>
+           </div>
+
+         </form>
+
+      </div>
+    </div>
+  </div>
+    
+  </div>
   
 
   <script src="js/jquery-3.1.1.min.js"></script>

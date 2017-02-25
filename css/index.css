@@ -27,23 +27,6 @@
 	margin-bottom: 2px;
 }
 
-@media (max-width: 767px) {
-	.perfil {
-		color: #FFF;
-	}
-
-	.perfil a {
-		color: #9d9d9d;
-		display: block;
-		padding: 5px 0;
-	}
-
-	.perfil a:hover {
-		text-decoration: none;
-		color: #FFF;
-	}
-}
-
 /*-----------------------*\
   Cabecalho
 \*-----------------------*/
@@ -60,4 +43,34 @@
 
 .dados-os {
 	margin-top: 30px;
+}
+
+.paginacao {
+	margin: 0;
+}
+
+
+@media (max-width: 767px) {
+	.perfil {
+		color: #FFF;
+	}
+
+	.perfil a {
+		color: #9d9d9d;
+		display: block;
+		padding: 5px 0;
+	}
+
+	.perfil a:hover {
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	.paginacao {
+		text-align: center;
+	}
+
+	.paginacao .pagination {
+		margin-top: 20px;
+	}
 }
